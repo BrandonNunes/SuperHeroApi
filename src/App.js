@@ -21,10 +21,8 @@ useEffect(() => {
   {
     setHero(res.data.results)
     setLoading(false)
-  }
-  )
- 
-}, [search])
+  })
+}, [search, baseUrl])
   
 if(search === ''){
   setSearch('')
@@ -33,8 +31,8 @@ if(search === ''){
     <main className="App">
        
         <Header value={value} setValue={setValue} setSearch={setSearch}/>
-        <h4>{loading ? 'Loading...' : 'Resultados:'}</h4>
-        {hero?<Hero hero={hero}/>:<p style={{fontSize:"30px",color:"red" }}>Nada encontrado... :(</p>}
+          <h4>{loading ? 'Loading...' : 'Results:'}</h4>
+        {hero?<Hero hero={hero}/>:<p style={{fontSize:"30px",color:"red" }}>Not Found... :(</p>}
      
     </main>
   );
