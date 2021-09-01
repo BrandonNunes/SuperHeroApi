@@ -55,7 +55,7 @@
     flex-wrap: wrap;
     gap: 5px;
     justify-content: center;
-   z-index: 9;
+    z-index: 9;
 }
 .heroContainer .name{
     text-align: center;
@@ -67,4 +67,20 @@
 }
 .hero img{
     width: 100%;
+}
+@media screen and (max-width:414px) {
+    .hero img{
+        height: 400px;
+    }
+    .hero{
+        width: 350px;
+    }
+}
+@media screen and (max-width:320px) {
+    .hero img{
+        height: 300px;
+    }
+    .hero{
+        width: 250px;
+    }
 }

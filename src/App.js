@@ -17,16 +17,30 @@ function App() {
  
 useEffect(() => {
   
+  
   axios.get(baseUrl).then((res)=>
   {
     setHero(res.data.results)
     setLoading(false)
   })
-}, [search, baseUrl])
   
+}, [search, baseUrl])
+
+//Parte em teste para ativar a tecla ENTER para buscar, porem esta dando erro de loop
+// document.addEventListener('keyup', (e)=>{
+  
+//   if(e.keyCode === 13){
+//     setSearch(value)
+//   }
+// })
+
+
 if(search === ''){
   setSearch('')
 }
+
+
+
   return (
     <main className="App">
        
