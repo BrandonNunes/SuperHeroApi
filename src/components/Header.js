@@ -1,5 +1,5 @@
 import React from 'react'
-
+import icon from './search.png'
 export const Header = ({setSearch, value, setValue}) => {
     
  
@@ -7,8 +7,8 @@ export const Header = ({setSearch, value, setValue}) => {
        <header className="head">
             <h3>Search Hero or Villain:</h3>
             <label >
-               <input type='text' value={value} onChange={(e)=>setValue(e.target.value)}/>
-               <input type='button' value='Search' onClick={()=>setSearch(value)} disabled={value===''?true:false}/>
+               <input type='text' value={value} onChange={(e)=>setValue(e.target.value)} placeholder="your text"/>
+               <button className='btn'  onClick={()=>setSearch(value)} disabled={value===''?true:false}><img src={icon} width='20px'/></button>
            </label>
         </header>
     )

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -29,26 +31,36 @@
     height: 30px;
     border: none;
     border-radius: 5px;
+    padding: 5px;
     font-size: 20px;
     font-weight: 800;
+    font-family:'Marvel' ;
 }
-.head input[type='button']{
+.head button{
     height: 30px;
+    width: 30px;
+    margin-left: 10px;
     border: none;
+    border: 1px solid black;
     border-radius: 5px;
     font-size: .7rem;
+    font-family:'Marvel' ;
     font-weight: 800;
     color: #fff;
-    background-color:red;
+    background-color:white;
 }
-.head input[type='button']:hover{
+button img{
+    filter:grayscale(23);
+}
+.head button:hover{
     cursor: pointer;
-    background-color: aqua;
+    background-color: black;
 }
 .head h3{
-    font-size: 30px;
-    color: #000;
-    text-shadow: 1px 2px 2px #fff;
+    font-size: 3rem;
+    font-family:'Marvel' ;
+    color: #fff;
+    text-shadow: 1px 2px 2px black;
 }
 .heroContainer{
     display: flex;
