@@ -11,7 +11,7 @@ function App() {
   const [search,setSearch] = useState('batman');
   const [value, setValue] = useState('')
   const token = '2073922109429846'
-  const baseUrl = `https://superheroapi.com/api/${token}/search/${search}`;
+  const baseUrl = `https://superheroapi.com/api.php/${token}/search/${search}`;
   const [loading, setLoading] = useState(true)
 
  
