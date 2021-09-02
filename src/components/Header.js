@@ -8,7 +8,7 @@ export const Header = ({setSearch, value, setValue}) => {
             <h3>Search Hero or Villain:</h3>
             <label >
                <input type='text' value={value} onChange={(e)=>setValue(e.target.value)} placeholder="Search"/>
-               <button className='btn'  onClick={()=>setSearch(value)} disabled={value===''?true:false}><img src={icon} width='20px'/></button>
+               <button className='btn'  onClick={()=>setSearch(value)} disabled={value===''?true:false}><img src={icon} width='20px' alt="search"/></button>
            </label>
         </header>
     )
