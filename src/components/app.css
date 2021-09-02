@@ -31,10 +31,11 @@
     height: 30px;
     border: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
-    font-weight: 800;
-    font-family:'Marvel' ;
+    font-weight: 700;
+    font-family:'Marvel';
+    text-align:right;
 }
 .head button{
     height: 30px;
@@ -45,7 +46,7 @@
     border-radius: 5px;
     font-size: .7rem;
     font-family:'Marvel' ;
-    font-weight: 800;
+    font-weight: 700;
     color: #fff;
     background-color:white;
 }
@@ -86,6 +87,9 @@ button img{
     }
     .hero{
         width: 350px;
+    }
+    .head h3{
+        font-size: 2rem; ;
     }
 }
 @media screen and (max-width:320px) {
