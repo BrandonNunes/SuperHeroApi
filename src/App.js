@@ -8,7 +8,7 @@ import "./components/app.css"
 
 function App() {
   const [hero,setHero] = useState([]);
-  const [search,setSearch] = useState('ironman');
+  const [search,setSearch] = useState('spider');
   const [value, setValue] = useState('')
   const token = '2073922109429846'
   const baseUrl = `https://superheroapi.com/api.php/${token}/search/${search}`;

@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Marvel';
+}
+body{
+    overflow-x: hidden;
 }
 .App{
     display: flex;
@@ -11,21 +15,26 @@
     align-items: center;
     width: 100vw;
     height: 100%;
-  
+    overflow-x: hidden;
    
+}
+.App h4{
+    text-shadow: 1px 1px 1px black;
+    font-weight: 700;
 }
 .head{
     background-color: red;
-    width: 100%;
+    max-width: 100vw;
+    width: 100vw;
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url('./Marvel-Vs.-DC.jpg');
-    background-size: 100%;
-    background-repeat:repeat;
-
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow: hidden;
 }
 .head input[type='text']{
     height: 30px;
@@ -67,19 +76,30 @@ button img{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    width: 100vw;
     justify-content: center;
     z-index: 9;
+    font-family:'Marvel';
+    overflow-x: hidden;
 }
 .heroContainer .name{
     text-align: center;
+    text-shadow: 1px 2px 1px black;
 }
 .hero{
     background-color: #181818aa;
     color: white;
     width: 200px;
+    font-family:'Marvel';
+    overflow: hidden;
+    box-shadow: 1px 1px 1px black;
 }
 .hero img{
     width: 100%;
+}
+.skills{
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
 }
 @media screen and (max-width:414px) {
     .hero img{
